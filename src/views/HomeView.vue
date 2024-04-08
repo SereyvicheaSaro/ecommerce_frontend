@@ -43,7 +43,6 @@
       </div>
     </div>       
   </div>
-  <router-link to="/ProductDetail">Go to Product Detail</router-link>
 </template>
 
 <script>
@@ -55,7 +54,6 @@ import { useStore } from "../stores/store.js";
 import Categories from '../components/Categories.vue';
 import Brands from "../components/Brands.vue"
 import ProductCart from "../components/Product-cart.vue"
-import ProductDetail from './ProductDetail.vue';
 
 export default {
   name: "Home",
@@ -66,16 +64,12 @@ export default {
     Categories,
     Brands,
     ProductCart,
-    ProductDetail
   },
   setup() {
     const store = useStore();
     return { store };
   },
-  created() {
-    // Use router.push() in the created() lifecycle hook
-    this.$router.push({ name: 'ProductDetail' });
-  }
+
   
 };
 </script>
