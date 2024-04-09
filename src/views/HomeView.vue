@@ -109,7 +109,7 @@ export default {
   }
   .cartComponent{
     display: flex;
-    flex-wrap: wrap; /* Adjust if you want the cart items to wrap */
+    flex-wrap: wrap;
     justify-content: space-between;
     gap:30px
   }
