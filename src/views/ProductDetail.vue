@@ -20,10 +20,14 @@
     </div> 
     <p style="font-size: 30px; text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     <div style="display: flex; gap: 30px;">
-      <div class="description"><h2>Description</h2></div>
-      <div class="review"><h2>Reviews</h2></div>
+      <div class="description active">
+        <button><h2>Description</h2></button>
+      </div>
+      <div class="review">
+        <button><h2>Reviews</h2></button>
+      </div>
     </div>
-    <div class="des">
+    <div class="des" style="font-size: 28px; text-align: justify;">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </div>
   </div>
@@ -40,7 +44,7 @@ export default {
 
 <style scoped>
 .main-container{
-  width: 95%;
+  width: 90%;
   margin: auto;
   gap: 100px;
   display: flex;
@@ -54,15 +58,15 @@ export default {
   width: 60%;
 }
 .left-side .main-img {
-  width: 80%;
+  width: 100%;
 }
 .main-img img {
   width: 100%;
 }
 .left-side .pre-img {
-  width: 20%;
+  width: 25%;
   display: flex;
-  gap: 15px;
+  gap: 20px;
 }
 .pre-img img {
   width: 90%;
@@ -71,8 +75,18 @@ export default {
 .star-wrap{
   display: flex;
   gap: 10px;
+  
 }
 .star{
   width: 20px;
+}
+button{
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+.active{
+  text-decoration: underline;
 }
 </style>
